@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Finding the total differential for a cobb-douglas function</title>
+</head>
+<body>
+<!-- 
+    Greek Letter reference:
+    https://www.science.co.il/internet/html/Greek-characters.php -->
+
+    <h1>Finding the total differential for a cobb-douglas function</h1>
+    <br>
+    Total differential formula or the Small increments formula (SIF):
+    <br><br>
+    &Delta;Q = <i>f</i><sub>K</sub>&Delta;K + <i>f</i><sub>L</sub>&Delta;L      
+    <br><br>
+
+    Note that the partial derivatives with respect to k and l will be denoted by fk and fl respectively
+    
+    <p>Q = <i>f</i>(K,L) = AK<sup> &alpha;</sup>L<sup>&beta; </sup>(CD production function)</p>
+
+    
+    <form>
+        <label id="avalue">Value for A (in CD production function) </label>
+        <input type="text" id="Afortotdifferential" name="A"><br><br>
+
+        <label id="bvalue">Value for &alpha; (in CD production function) </label>
+        <input type="text" id="Alphafortotdifferential" name="Alpha"><br><br>
+
+        <label id="cvalue">Value for &beta; (in CD production function) </label>
+        <input type="text" id="Betafortotdifferential" name="Beta"><br><br>
+
+        <label id="Lvalue">Initial value for L </label>
+        <input type="text" id="L" name="Lvalue"><br><br>
+
+        <label id="Kvalue">Initial value for K </label>
+        <input type="text" id="K" name="Kvalue"><br><br>
+
+        <label id="cvalue">Value for &Delta;K </label>
+        <input type="text" id="deltaK" name="deltaK"><br><br>
+
+        <label id="cvalue">Value for &Delta;L </label>
+        <input type="text" id="deltaL" name="deltaL"><br><br>
+
+        <button type="submit" id = "calculateButton">Calculate</button>
+    </form>
+
+    <div class="solving"></div>
+
+
+    <script src="app.js" defer ></script>
+    
+</body>
+</html>
